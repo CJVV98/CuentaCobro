@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+         <link rel="STYLESHEET" type="text/css" href="css/style.css"></link>
+        <title>Cuenta de Cobro</title>
+    </h:head>
+    <h:body>
+      <h:form>
+            <div id="contenedor">
+                <div id="cabecera">
+                    <h:outputText value="CUENTA DE COBRO" />
+                    <br></br>
+                </div>
+                <div id="lateral"></div>
+                <div id="lateral" >
+                    
+                    <h:outputText value="Nombre: " />
+                    <br></br>
+                    <h:outputText value="Apellido: "/>
+                    <br></br>
+                    <h:outputText value="Profesion: " />
+                    <br></br>
+                    <h:outputText value="Genero: "/>
+                    <br></br>
+                    <h:outputText value="Idioma: "/>
+                    <br></br>
+                    <h:outputText value="Ubicacion: " />
+                    <br></br>
+                    <h:outputText value="Dias Laborados: "/>
+                    
+                </div>
+
+                <div id="contenido">
+                    <h:inputText value="#{cuenta.nombre}"/>
+                    <br></br>
+                    <h:inputText value="#{cuenta.apellido}"/>
+                    <br></br>
+                    <h:selectOneMenu value="#{cuenta.profesion}">
+                        <f:selectItem itemValue="Ingeniero" itemLabel="Ingeniero"/>
+                        <f:selectItem itemValue="Tecnologo" itemLabel="Tecnologo"/>
+                        <f:selectItem itemValue="Tecnico" itemLabel="Tecnico"/>
+                        <f:selectItem itemValue="Auxiliar" itemLabel="Auxiliar"/>
+                    </h:selectOneMenu>
+                    <br></br>
+                    <h:selectOneRadio value="#{cuenta.genero}">
+                        <f:selectItem itemValue="H" itemLabel="Hombre"/>
+                        <f:selectItem itemValue="M" itemLabel="Mujer"/>
+                    </h:selectOneRadio>                    
+                    <h:selectManyCheckbox value="#{cuenta.idiomas}">
+                        <f:selectItem itemValue="Ingles" itemLabel="Ingles"/>
+                        <f:selectItem itemValue="Frances" itemLabel="Frances"/>
+                        <f:selectItem itemValue="Aleman" itemLabel="Aleman"/>
+                    </h:selectManyCheckbox>
+                    <h:selectOneRadio value="#{cuenta.ubicacion}">
+                        <f:selectItem itemValue="Facatativa" itemLabel="Facatativa"/>
+                        <f:selectItem itemValue="Afueras" itemLabel="Afueras"/>
+                    </h:selectOneRadio>
+                    <h:inputText value="#{cuenta.diasTrab}"/>
+                    <br></br><br></br>
+                    <h:commandButton value="Generar " action="documento" style="font-weight: bold; background-color:#ec9927;  font-family: sans-serif; font-size: 100%;color:black"/>
+                </div>
+                <br></br>
+                              
+          </div>
+        </h:form>
+    </h:body>
+</html>
+

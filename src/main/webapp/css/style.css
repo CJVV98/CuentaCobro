@@ -1,0 +1,53 @@
+body{
+   background-color:#274a6c;
+   
+}
+#contenedor {
+  color:#fafcfe;
+  line-height: 3em;
+  
+}
+#contenedor_doc {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 100%;  
+  background-color:#fcfaf7;
+  padding: 3px 10px;
+  border: PowderBlue 5px solid;
+  border-radius: 20px;
+  color:#0a0700;
+  line-height: 1em;
+  margin: 5% 20%;
+  
+}
+#cabecera {
+    margin: 1% 38%;
+    color:#fafcfe;
+    font-family: sans-serif;
+    font-size: 120%;
+    width: 100%;
+   
+}
+#lateral {
+    
+  padding: 1%;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 100%;
+  line-height: 3.2em;   
+  float: left;
+  width: 20%;
+  
+}
+#contenido {
+  margin: 1%;
+  float: left;
+  width: 40%;
+  
+}
+
+.ui-widget .ui-button { 
+    background: rgb(0,255,0);
+    text-decoration: beige;
+     }
+
