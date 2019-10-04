@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package com.udec.cuentacobro.controlador;
-
 import com.udec.cuentacobro.modelo.Logica;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;

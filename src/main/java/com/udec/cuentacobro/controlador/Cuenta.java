@@ -8,9 +8,7 @@ package com.udec.cuentacobro.controlador;
 import java.io.Serializable;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
-
-
-    
+ 
 
 /**
  * Controlador de la Vista cuenta

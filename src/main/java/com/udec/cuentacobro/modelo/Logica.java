@@ -99,11 +99,10 @@ public class Logica {
         String[] datos=new String[7];
         int i=0;
         datos[i]="Cuenta de Cobro";
-        if(persona.getGenero().equals("M")){
+        if(persona.getGenero().equals("M"))
             datos[i++]="Señora: "+persona.getNombre()+" "+persona.getApellido();
-        }else{
-            datos[i++]="Señor: "+persona.getNombre()+" "+persona.getApellido();
-        }
+        else
+            datos[i++]="Señor: "+persona.getNombre()+" "+persona.getApellido();      
         datos[i++]="Por su profesion:  "+persona.getProfesion();
         if(persona.getIdiomas().length>0){
             int dato=i++;
